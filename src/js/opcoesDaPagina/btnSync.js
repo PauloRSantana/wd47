@@ -10,7 +10,7 @@
 
         const cartoes = document.querySelectorAll(".cartao")
         const infosDoMural = {
-            usuario: "paulo@email.com.br"
+            usuario: "sambrmg@gmail.com"//"paulo@email.com.br"
             ,cartoes: Array.from($(".cartao")).map(function(cartao){
                 return {
                     conteudo: cartao.querySelector(".cartao-conteudo").textContent

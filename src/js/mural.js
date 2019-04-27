@@ -76,13 +76,20 @@ window.adicionaCartaoNoMural= function(cartaoObj){
 $.ajax({
     url: "https://ceep.herokuapp.com/cartoes/carregar",
     method: "GET",
-    data: {usuario: "paulo@email.com.br"},
+    data: {usuario: "sambrmg@gmail.com"},
     dataType: "jsonp",
     success: function(objeto){
         const cartoes = objeto.cartoes
+        var btn= document.querySelector("#btnMudaLayout");
+        var layout = ""
         cartoes.forEach(function(cartao){
+            var conteudoArr = cartao.conteudo.split("##")
+            cartao.conteudo = conteudoArr[0]
             adicionaCartaoNoMural(cartao)
+            layout = conteudoArr[1]
         })
+        btn.textContent = layout;
+        mudaPosicaoCard()
     }
 })
 
