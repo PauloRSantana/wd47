@@ -1,18 +1,21 @@
-"use strict";
+'use strict';
 
 (function () {
     var btnAjuda = document.querySelector('#btnAjuda');
     btnAjuda.addEventListener("click", function () {
-        /* const ajudas =[
-            "Bem vindo ao Ceep"
-            ,"Clique no btn Linhas para mudar o layout"
-        ] */
+        //pegador de ajudas
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://ceep.herokuapp.com/cartoes/instrucoes');
+        xhr.responseType = "json";
+        xhr.send();
+        xhr.addEventListener("load", function () {
+            var objeto = xhr.response;
+            var ajudas = objeto.instrucoes;
 
-        var ajudas = [{ conteudo: "Bem vindo ao Ceep", cor: "#F05450" }, { conteudo: "Clique no btn Linhas para mudar o layout", cor: "#92C4EC" }];
-
-        ajudas.forEach(function (ajuda) {
-            //alert(item)
-            adicionaCartaoNoMural(ajuda);
+            ajudas.forEach(function (ajuda) {
+                //alert(item)
+                adicionaCartaoNoMural(ajuda);
+            });
         });
     });
     btnAjuda.classList.remove('no-js');
