@@ -1,4 +1,4 @@
-
+/* 
 
     cartao.addEventListener("change", function mudaCor(event){
         const elementoSelecionado= event.target
@@ -7,3 +7,4 @@
             cartao.style.backgroundColor = elementoSelecionado.value
         }
     });
+ */
