@@ -1,0 +1,221 @@
+CURSO JAVASCRITP	13/04/19
+
+1º AULA (SÁBADO) - PROFESOR GUILHERME
+
+-Definição de Front End, back end e DB.
+-HTML- marcação de página web
+-Ver comando do Emmet, pode acessar a página dele para pesquisar.
+-No F12 mostra o DOM.
+-@media no CSS e como o IF 
+-ver no site W3School sobre "viewport".Viewport e toda área visivel no site.
+-Hoje utliza FlexBox
+-border-box tbm hoje utilizado
+
+------------------CLONE DO EXERCICIO--------------------------
+https://github.com/caelum/projeto-wd47
+1.abra o teminal e digite: git clone (cole link)
+2.acessar a pasta
+3. digite: code . 
+----------------------------------------------
+
+JAVASCRIPT
+-variavel 
+-array
+-objeto {}
+-funções anonimas, que são sem nome.(function())
+
+-----
+DOM
+-document.querySelector("p"); Pega elemento p
+-document.querySelector("p").textContent = "Oláaaaaaaaaaaa"; Atribui valor.
+-document.querySelector(".mural").style.flexDirection = "row";
+-document.querySelector(".mural").style.flexDirection = "column";
+-----------------------
+
+Pesquisar por Vanila javascript
+--------------------------------
+<button onclick="colunaLinha(this)">LINHAS</button>
+
+function colunaLinha(elem){
+	elem.textContent = "Blocos";
+}
+--------------------------------
+
+============================================XX
+
+2º aula 20/04/2019
+
+
+HOJE é utilizado "querySelector();" é não mais o getElementById();
+
+FLEXBOX: ajuda no CSS.(display:flex/ display:grid). Esse flexbox e uma nova tecnologia utilizada para posicionamento de elementos na pagina web.
+
+================
+acessar site: 
+
+https://caniuse.com/
+
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
+
+https://www.qqenglish.com.br/
+================
+
+ULTIMA AULA
+
+-Utilizando NodeJs, vamos utilizar o site heroku que vai fazer o "servidor de aplicação".
+
+conta heroku
+-paulorobsantana@gmail.com
+-fan@160CC
+
+
+https://devcenter.heroku.com/articles/getting-started-with-nodejs
+
+-------------
+dontpad -> notepad online
+---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
